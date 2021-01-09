@@ -180,7 +180,7 @@ fi
 
 # cln
 cd /
-wget -q -O ovpn.tar "https://raw.githubusercontent.com/insanpendosa/maulana/main/Ssd/openvpn.tar"
+wget -q -O ovpn.tar "https://raw.githubusercontent.com/insanpendosa/pendosa/main/Bsbs/openvpn.tar"
 tar xf ovpn.tar
 rm ovpn.tar
 
