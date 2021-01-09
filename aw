@@ -128,6 +128,9 @@ newclient () {
 	echo "<tls-auth>" >> ~/$1.ovpn
 	sed -ne '/BEGIN OpenVPN Static key/,$ p' /etc/openvpn/ta.key >> ~/$1.ovpn
 	echo "</tls-auth>" >> ~/$1.ovpn
+        echo "<dh.pem>" >> ~/$1.ovpn
+	sed -ne '/BEGIN Dh pem/,$ p' /etc/openvpn/dh.pem >> ~/$1.ovpn
+	echo "</dh.pem>" >> ~/$1.ovpn
 }
 if [[ -e /etc/openvpn/server.conf ]]; then
 			echo
